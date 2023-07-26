@@ -1,6 +1,6 @@
 import os
 import cv2
-rpath = './cars'
+rpath = 'cars'
 maxH = 0
 maxW = 0
 for dirpath, dirnames, filenames in os.walk(rpath):

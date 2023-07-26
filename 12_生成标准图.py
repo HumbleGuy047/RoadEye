@@ -28,7 +28,7 @@ ww = 200
 hh = 160
 #I=np.zeros((h,w),dtype=np.uint8)
 #showImg('img',I)
-rpath = './cars'
+rpath = 'cars'
 categ = 'null'
 for dirpath, dirnames, filenames in os.walk(rpath):
 	for fileName in filenames:
@@ -44,6 +44,6 @@ for dirpath, dirnames, filenames in os.walk(rpath):
 		gray1 = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
 		I=np.zeros((hh,ww),dtype=np.uint8)
 		copyImg(I,gray1,0,0)
-		savePath = './cars1/%s/%s'%(categ,fileName)
+		savePath = 'cars1/%s/%s'%(categ,fileName)
 		cv2.imwrite(savePath,I)
 		#showImg('img',I)
