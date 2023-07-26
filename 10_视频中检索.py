@@ -25,7 +25,7 @@ while True:
 				if area>100:
 					x,y,w,h = cv2.boundingRect(contour)
 					img2 = img1[y:y+h,x:x+w]
-					imgPath = "./cars/%d.jpg"%(ii)
+					imgPath = "cars/%d.jpg"%(ii)
 					ii += 1
 					cv2.imwrite(imgPath,img2)
 					#cv2.rectangle(img1, (x,y) , (x+w , y+h) ,(255,255,255) , 1)
