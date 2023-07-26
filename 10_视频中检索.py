@@ -19,7 +19,7 @@ while True:
 		#img1 = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel, iterations=1)
 		img1 = cv2.medianBlur(fgmask,15)		#中值滤波，第2个值必须对2取余==1
 		if flag==1:
-			bry,contours,hierarchy = cv2.findContours(img1,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
+			contours,hierarchy = cv2.findContours(img1,cv2.RETR_LIST,cv2.CHAIN_APPROX_SIMPLE)
 			for contour in contours:
 				area = cv2.contourArea(contour)
 				if area>100:
@@ -28,7 +28,6 @@ while True:
 					imgPath = "cars/%d.jpg"%(ii)
 					ii += 1
 					cv2.imwrite(imgPath,img2)
-					#cv2.rectangle(img1, (x,y) , (x+w , y+h) ,(255,255,255) , 1)
 		cv2.imshow('video',img1)		#显示前景
 		key = cv2.waitKey(20)
 		if key == 32:	#按空格键开始生成图片
