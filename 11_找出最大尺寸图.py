@@ -1,10 +1,11 @@
 import os
 import cv2
-rpath = './cars'
+rpath = 'raw_data'
 maxH = 0
 maxW = 0
+
+# get largest image and use its dimension for all other images
 for dirpath, dirnames, filenames in os.walk(rpath):
-	#print(dirpath,dirnames,filenames)
 	for fileName in filenames:
 		imgPath = '%s/%s'%(rpath,fileName)
 		img = cv2.imread(imgPath)
