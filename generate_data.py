@@ -10,15 +10,15 @@ cv2.namedWindow("video",0)		# enable resizing video window
 # approximation and naive bayes segmentation，detectShadows = True (default) 
 # to mark shadow but also reduces the speed, where shadows are marked grey.
 # mog = cv2.createBackgroundSubtractorMOG2()	
-mog = cv2.createBackgroundSubtractorKNN()	# knn segmentation，better result than MOG2 from observation
+obj = cv2.createBackgroundSubtractorKNN()	# knn segmentation，better result than obj2 from observation
 ii=1
 flag=0
 while True:
 	ret,frame = cap.read()
 	if ret:
-		#fgmask = mog.apply(frame)
+		#fgmask = obj.apply(frame)
 		gray = cv2.cvtColor(frame, cv2.COLOR_RGB2YCrCb)	#Y是亮度通道，Cr是红色分量，Cb是蓝色分量
-		fgmask = mog.apply(gray, learningRate = 0.05)
+		fgmask = obj.apply(gray, learningRate = 0.05)
 		#kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
 		#img1 = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel, iterations=1)
 		img1 = cv2.medianBlur(fgmask,15)		# median filtering，second param % 2 ==1
