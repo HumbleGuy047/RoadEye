@@ -33,7 +33,6 @@ import joblib
 # knn
 from sklearn.neighbors import KNeighborsClassifier
 knn=KNeighborsClassifier(n_neighbors=5)		
-#n_neighbors: int, 可选参数(默认为 5)用于kneighbors查询的默认邻居的数量
 trainRs = knn.fit(xtrain,ytrain)
 joblib.dump(trainRs,'vehicle_knn.pkl')
 
