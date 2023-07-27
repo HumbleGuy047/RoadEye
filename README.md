@@ -1,5 +1,3 @@
-# vehicle-classifier
-
 # RoadEye
 
 ## Description
