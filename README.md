@@ -1,3 +1,6 @@
+# vehicle-classifier
+ 
+=======
 # RoadEye
 
 ## Description
@@ -45,7 +48,7 @@ Iterating over the subdirectories of `train_data` and collecting training data a
 ## Step 5: Run and Test
 
 Result is as follows!
+![Image 4](md_assets/result.png)
 
-![Animated GIF](md_assets\result.gif)
-*GIF Description: An animated GIF demonstrating a funny dance.*
-
+![Animated GIF](md_assets/result.gif)
+*End Result Voila!*
