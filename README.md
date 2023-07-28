@@ -1,4 +1,8 @@
 # RoadEye
+Copyright © [2023] [Tao He, Marshal Guo]. All rights reserved.
+
+Email: pkutao@126.com, marshal.guo@mail.utoronto.ca
+
 ![Image 5](md_assets/result.png)
 
 ## Description
