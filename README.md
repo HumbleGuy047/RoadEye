@@ -1,4 +1,5 @@
 # RoadEye
+Copyright © [2023] Tao He, Marshal Guo.
 ![Image 5](md_assets/result.png)
 
 ## Description
