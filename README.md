@@ -6,7 +6,7 @@ Copyright © [2023] Tao He, Marshal Guo.
 
 A computer vision program that differentiates cars and bikes from the traffic in the video file, using only OpenCV and NumPy for image processing. Different training algorithms are provided in the comments of the `train.py` file for you to try out. 
 
-As this model is still a prototype. In a sample of 28 incoming traffics, only 4 vehicles were detected as the wrong category (including the case where the machine confuses and decides back and forth). Thus for this specific sample of testing data, the model has an accuracy of 86%.
+As this model is still a prototype. In a sample of 28 incoming traffics, only 4 vehicles were detected as the wrong category. Thus for this specific sample of testing data, the model has an accuracy of 86%.
 
 ## Process
 
