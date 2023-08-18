@@ -6,6 +6,7 @@ rf=joblib.load('vehicle_lr.pkl')
 font=cv2.FONT_HERSHEY_SIMPLEX
 ww = 233
 hh = 222
+ 
 
 def copyImg(img1, img2, x, y):
     dim = img2.shape
